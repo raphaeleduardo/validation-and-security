@@ -1,9 +1,9 @@
-package com.devsuperior.bds04.dto;
+package com.devraphael.desafio.dto;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-import com.devsuperior.bds04.entities.Event;
+import com.devraphael.desafio.entities.Event;
 
 public class EventDTO implements Serializable {
 	private static final long serialVersionUID = 1L;

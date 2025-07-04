@@ -1,4 +1,4 @@
-package com.devsuperior.bds04.entities;
+package com.devraphael.desafio.entities;
 
 import java.time.LocalDate;
 
