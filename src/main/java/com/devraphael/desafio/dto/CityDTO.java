@@ -1,15 +1,16 @@
 package com.devraphael.desafio.dto;
 
-import java.io.Serializable;
-
 import com.devraphael.desafio.entities.City;
 
-public class CityDTO implements Serializable {
-	private static final long serialVersionUID = 1L;
-	
+import jakarta.validation.constraints.NotBlank;
+
+public class CityDTO {
+
 	private Long id;
-	private String name;
 	
+	@NotBlank(message = "Campo requerido")
+	private String name;
+
 	public CityDTO() {
 	}
 
@@ -17,7 +18,7 @@ public class CityDTO implements Serializable {
 		this.id = id;
 		this.name = name;
 	}
-	
+
 	public CityDTO(City entity) {
 		id = entity.getId();
 		name = entity.getName();
